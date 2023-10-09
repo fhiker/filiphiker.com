@@ -1,0 +1,54 @@
+<script>
+  document.querySelectorAll("#openNav, #sidenav")?.forEach((e) => {
+    e.addEventListener("click", () => toggleNav(e));
+  });
+
+  function toggleNav(e: Element) {
+    document.getElementById("sidenav")?.classList.toggle("w-60");
+
+    if (e.id === "openNav") {
+      document.getElementById("openNav")?.classList.toggle("hidden");
+    } else {
+      setTimeout(function () {
+        document.getElementById("openNav")?.classList.toggle("hidden");
+      }, 300);
+    }
+  }
+</script>
+
+<header class="pl-20">
+  <nav
+    id="sidenav"
+    class="h-full fixed z-1 top-0 left-0 bg-neutral-950 overflow-x-hidden pt-60px transition-all duration-500 w-0 flex flex-col gap-8 pt-16 align-center">
+    <a
+      href="javascript:void(0)"
+      class="absolute top-3 right-6 text-3xl ml:50px text-zinc-400 hover:text-white"
+      >&times;</a
+    >
+    <a
+      class="font-medium uppercase text-center text-lg font-roboto text-zinc-400 hover:text-white focus:text-zinc-500"
+      href="#home">Home</a
+    >
+    <a
+      class="font-medium uppercase text-center text-lg font-roboto text-zinc-400 hover:text-white focus:text-zinc-500"
+      href="#about">About</a
+    >
+    <a
+      class="font-medium uppercase text-center text-lg font-roboto text-zinc-400 hover:text-white focus:text-zinc-500"
+      href="#services">Services</a
+    >
+    <a
+      class="font-medium uppercase text-center text-lg font-roboto text-zinc-400 hover:text-white focus:text-zinc-500"
+      href="#portfolio">projects</a
+    >
+    <a
+      class="font-medium uppercase text-center text-lg font-roboto text-zinc-400 hover:text-white focus:text-zinc-500"
+      href="#contact">Contact</a
+    >
+  </nav>
+  <span
+    id="openNav"
+    class="text-3xl cursor-pointer fixed top-0 left-0 p-4 pl-5 text-zinc-400 transition-all duration-500"
+    >&#9776;</span
+  >
+</header>

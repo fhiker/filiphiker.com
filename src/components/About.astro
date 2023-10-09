@@ -1,0 +1,149 @@
+---
+import { Image } from "astro:assets";
+import photo from "../assets/photo.jpg";
+---
+
+<style>
+  .photo:hover .photo-overlay {
+    width: 100%;
+  }
+</style>
+
+<section id="about" class="py-8 md:p-16">
+  <div
+    class="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-xl mx-auto w-full pl-4 pr-4 mr-auto ml-auto">
+    <div class="flex flex-wrap">
+      <div
+        class="flex items-start xl:items-center basis-full md:basis-1/2 w-full md:w-1/2 px-4 pt-4 xl:pt-0">
+        <div class="relative max-w-full photo">
+          <Image src={photo} class="w-full" alt="" />
+
+          <div
+            class="absolute top-0 bottom-0 left-0 right-0 bg-black bg-opacity-75 overflow-hidden w-0 transition-all duration-500 photo-overlay">
+            <div
+              class="w-full flex flex-wrap gap-6 justify-center whitespace-nowrap text-white text-xl absolute overflow-hidden top-1/2">
+              <a href="https://www.facebook.com/filip.grycz.1"
+                ><i class="text-white m-auto mr-5px ml-5px w-8"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                    ></path>
+                  </svg></i
+                ></a
+              >
+              <a href="https://mail.google.com/mail/u/0/#inbox"
+                ><i class="text-white m-auto mr-5px ml-5px w-8"
+                  ><svg
+                    class="h-6 w-6 text-white"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z"></path>
+                    <path d="M17.788 5.108A9 9 0 1021 12h-8"></path></svg
+                  ></i
+                ></a
+              >
+              <a href="https://github.com/HikerF"
+                ><i class="text-white m-auto mr-5px ml-5px w-8"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    ></path>
+                  </svg></i
+                ></a
+              >
+              <div class="w-full text-center">
+                <span class="">contact@filiphiker.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-full md:w-1/2 pl-4 pr-4">
+        <div class="pt-4">
+          <h2 class="text-zinc-400 tracking-tight text-3xl">About me</h2>
+        </div>
+        <div>
+          <p class="text-left text-zinc-900 font-roboto mb-4 mt-6">
+            Hello, I'm Filip Hiker, an aspiring junior JS/TS developer with a
+            strong passion for web development. My journey in the world of
+            coding began with curiosity and an eagerness to create interactive
+            and engaging web experiences. It has since evolved into a love for
+            JS/TS, front-end development, and building web applications that
+            make a difference. My fascination with web technologies has led me
+            to explore modern frameworks and libraries, and I'm excited to stay
+            on the cutting edge of the ever-evolving JS/TS landscape. I believe
+            in the power of clean, efficient, and maintainable code to transform
+            ideas into reality. I'm always eager to connect with fellow
+            developers, learn from their experiences, and embrace new challenges
+            in the ever-exciting world of web development.
+          </p>
+
+          <div class="mb-5 pt-10">
+            <h2 class="text-zinc-400 text-3xl font-roboto">
+              My language skills
+            </h2>
+            <div class="relative mt-6">
+              <h6 class="text-sm mb-3 text-zinc-900 font-semibold font-roboto">
+                Czech
+              </h6>
+              <div class="relative bg-zinc-300">
+                <div
+                  class="relative h-1 bg-black transition-all"
+                  style="width: 100%;">
+                  <!-- Edit skill level here -->
+                  <span
+                    class="w-3 h-3 rounded-full bg-black absolute -right-px -top-1"
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="relative mt-6">
+              <h6 class="text-sm mb-3 text-zinc-900 font-semibold font-roboto">
+                English
+              </h6>
+              <div class="relative bg-zinc-300">
+                <div
+                  class="relative h-1 bg-black transition-all"
+                  style="width: 90%;">
+                  <!-- Edit skill level here -->
+                  <span
+                    class="w-3 h-3 rounded-full bg-black absolute -right-px -top-1"
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="relative mt-6">
+              <h6 class="text-sm mb-3 text-zinc-900 font-semibold font-roboto">
+                Japanese
+              </h6>
+              <div class="relative bg-zinc-300">
+                <div
+                  class="relative h-1 bg-black transition-all"
+                  style="width: 10%;">
+                  <!-- Edit skill level here -->
+                  <span
+                    class="w-3 h-3 rounded-full bg-black absolute -right-px -top-1"
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

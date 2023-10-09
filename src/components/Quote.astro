@@ -1,0 +1,56 @@
+<div class="h-24 md:h-36 bg-zinc-900 flex">
+  <div
+    class="words m-auto text-3xl md:text-6xl text-white font-semibold font-roboto">
+  </div>
+</div>
+
+<script>
+  var words = ["JS Programmer", "TS Programmer", "FrontEnd Developer"],
+    part,
+    i = 0,
+    offset = 0,
+    len = words.length,
+    forwards = true,
+    skip_count = 0,
+    skip_delay = 15,
+    speed = 70;
+  var wordflick = function () {
+    setInterval(function () {
+      if (forwards) {
+        if (offset >= words[i].length) {
+          ++skip_count;
+          if (skip_count == skip_delay) {
+            forwards = false;
+            skip_count = 0;
+          }
+        }
+      } else {
+        if (offset == 0) {
+          forwards = true;
+          i++;
+          offset = 0;
+          if (i >= len) {
+            i = 0;
+          }
+        }
+      }
+      part = words[i].substr(0, offset);
+      if (skip_count == 0) {
+        if (forwards) {
+          offset++;
+        } else {
+          offset--;
+        }
+      }
+      let cont = document.querySelector(".words") as HTMLInputElement;
+      cont.textContent = part;
+    }, speed);
+  };
+
+  //   $(document).ready(function () {
+  //     wordflick();
+  //   });
+  document.addEventListener("DOMContentLoaded", function () {
+    wordflick();
+  });
+</script>
