@@ -8,6 +8,9 @@ import sh4dice from "../assets/sh-4-dice.png";
 import sh10dice from "../assets/sh-10-dice.png";
 import sh10 from "../assets/sh-10.png";
 import sh20dice from "../assets/sh-20-dice.png";
+import hikerdo from "../assets/hikerdo.png"
+import landingHikerdo from "../assets/hikerdo-landing.png"
+import mv81 from "../assets/MV81.png";
 import sh20 from "../assets/sh-20.png";
 import sh20win from "../assets/sh-20-win.png";
 import sh40dice from "../assets/sh-40-dice.png";
@@ -24,28 +27,28 @@ import sh40 from "../assets/sh-40.png";
       <div class="grid gap-4">
         <div class="group hover:scale-125 transition-all">
           <Image class="h-auto max-w-full rounded-lg" src={filiphiker} alt="" />
-
           <div
             class="px-4 text-center hidden group-hover:flex absolute inset-0 opacity-0 group-hover:opacity-75 flex items-center justify-center bg-black border-2 rounded-lg text-white transition duration-300">
             <span class="text-lg">filiphiker.com</span>
           </div>
         </div>
         <div class="group hover:scale-125 transition-all">
-          <Image class="h-auto max-w-full rounded-lg" src={rw} alt="" />
+          <Image class="h-auto max-w-full rounded-lg" src={landingHikerdo} alt="" />
+
           <div
             class="px-4 text-center hidden group-hover:flex absolute inset-0 opacity-0 group-hover:opacity-75 flex items-center justify-center bg-black border-2 rounded-lg text-white transition duration-300">
-            <span class="text-lg">Retro Wheels - Kajot games</span>
+            <span class="text-lg"><a class="decoration-solid" href="https://hikerdo.com">Landing Page - Hikerdo</a></span>
           </div>
         </div>
         <div class="group hover:scale-125 transition-all">
           <Image
             class="h-auto max-w-full rounded-lg hover:scale-125 transition-all hover:border-2 border-black"
-            src={sh4dice}
+            src={sh20win}
             alt=""
           />
           <div
             class="px-4 text-center hidden group-hover:flex absolute inset-0 opacity-0 group-hover:opacity-75 flex items-center justify-center bg-black border-2 rounded-lg text-white transition duration-300">
-            <span class="text-lg">Simply hot 4 Dice - Kajot games</span>
+            <span class="text-lg">Simply Hot 20 - Kajot Games</span>
           </div>
         </div>
       </div>
@@ -53,12 +56,12 @@ import sh40 from "../assets/sh-40.png";
         <div class="group hover:scale-125 transition-all">
           <Image
             class="h-auto max-w-full rounded-lg hover:scale-125 transition-all hover:border-2 border-black"
-            src={sh40dice}
+            src={hikerdo}
             alt=""
           />
           <div
             class="px-4 text-center hidden group-hover:flex absolute inset-0 opacity-0 group-hover:opacity-75 flex items-center justify-center bg-black border-2 rounded-lg text-white transition duration-300">
-            <span class="text-lg">Simply hot 40 Dice - Kajot games</span>
+            <span class="text-lg"><a class="decoration-solid" href="https://app.hikerdo.com">Hikerdo - Project Manager</a></span>
           </div>
         </div>
         <div class="group hover:scale-125 transition-all">
@@ -75,36 +78,25 @@ import sh40 from "../assets/sh-40.png";
         <div class="group hover:scale-125 transition-all">
           <Image
             class="h-auto max-w-full rounded-lg hover:scale-125 transition-all hover:border-2 border-black"
-            src={sh20}
+            src={sh40dice}
             alt=""
           />
           <div
             class="px-4 text-center hidden group-hover:flex absolute inset-0 opacity-0 group-hover:opacity-75 flex items-center justify-center bg-black border-2 rounded-lg text-white transition duration-300">
-            <span class="text-lg">Simply hot 20 - Kajot games</span>
+            <span class="text-lg">Simply hot 40 Dice - Kajot games</span>
           </div>
         </div>
       </div>
       <div class="grid gap-4">
-        <div class="group hover:scale-125 transition-all">
+        <div class="group hover:scale-125 overflow-x-auto transition-all">
           <Image
             class="h-auto max-w-full rounded-lg hover:scale-125 transition-all hover:border-2 border-black"
-            src={sh20dice}
+            src={rw}
             alt=""
           />
           <div
             class="px-4 text-center hidden group-hover:flex absolute inset-0 opacity-0 group-hover:opacity-75 flex items-center justify-center bg-black border-2 rounded-lg text-white transition duration-300">
-            <span class="text-lg">Simply hot 20 dice - Kajot games</span>
-          </div>
-        </div>
-        <div class="group hover:scale-125 transition-all">
-          <Image
-            class="h-auto max-w-full rounded-lg hover:scale-125 transition-all hover:border-2 border-black"
-            src={sh4}
-            alt=""
-          />
-          <div
-            class="px-4 text-center hidden group-hover:flex absolute inset-0 opacity-0 group-hover:opacity-75 flex items-center justify-center bg-black border-2 rounded-lg text-white transition duration-300">
-            <span class="text-lg">Simply hot 4 - Kajot games</span>
+            <span class="text-lg">Retro Wheels - Kajot Games</span>
           </div>
         </div>
         <div class="group hover:scale-125 transition-all">
@@ -118,17 +110,28 @@ import sh40 from "../assets/sh-40.png";
             <span class="text-lg">Simply hot 10 dice - Kajot games</span>
           </div>
         </div>
+        <div class="group hover:scale-125 transition-all">
+          <Image
+            class="h-auto max-w-full rounded-lg hover:scale-125 transition-all hover:border-2 border-black"
+            src={sh4}
+            alt=""
+          />
+          <div
+            class="px-4 text-center hidden group-hover:flex absolute inset-0 opacity-0 group-hover:opacity-75 flex items-center justify-center bg-black border-2 rounded-lg text-white transition duration-300">
+            <span class="text-lg">Simply hot 4 - Kajot games</span>
+          </div>
+        </div>
       </div>
       <div class="grid gap-4">
         <div class="group hover:scale-125 transition-all">
           <Image
             class="h-auto max-w-full rounded-lg hover:scale-125 transition-all hover:border-2 border-black"
-            src={sh20win}
+            src={mv81}
             alt=""
           />
           <div
             class="px-4 text-center hidden group-hover:flex absolute inset-0 opacity-0 group-hover:opacity-75 flex items-center justify-center bg-black border-2 rounded-lg text-white transition duration-300">
-            <span class="text-lg">Simply hot 20 - Kajot games</span>
+            <span class="text-lg">Multi Vegas 81 Exclusive - Kajot games</span>
           </div>
         </div>
         <div class="group hover:scale-125 transition-all">
